@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+* {
+    margin: 0;/* domyślnie przeglądarka ma ustawione marginesy, zerujemy wszystkie*/
+
+}
+
+body{
+  
+  font-family: 'Lato', sans-serif;
+
+}
+header{
+  width: 100%;
+  background-image: url('tlo_restauracja.jpg');
+  background-size: cover;
+  background-attachment:fixed;
+  height:800px;
+}
+ 
+nav{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-link{
+  font-size: 35px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  padding: 14px 20px;
+  border-bottom: 2px solid transparent;
+  transition-duration: 0.6s;
+}
+.menu-link:hover{
+  border-bottom: 2px solid #ff5805;
+}
+
+@media screen and (max-width:768px){
+  nav{
+    flex-direction:column;
+    align-items: flex-end;
+  }
+}
+h1{
+  margin: 100px 0px;
+  font-size: 35px;
+  text-align: center;
+  width:100%;
+}
+h2{
+  text-align:center;
+  margin-top:10px;
+}
+
+.kontener{
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+  flex-wrap:wrap;
+}
+.info{
+  margin:30px;
+  width: 200px;
+  height: 200px;
+  border-radius:150px;
+  object-fit:cover;
+}
+.potrawa{
+  flex:1;
+}
+p{
+padding:0px 20px 0px 20px;
+}
+
+.zdj-galeria{
+  margin-top:10px;
+  width:400px;
+  height:200px;
+  object-fit:cover;
+}
+
+.zdj-galeria:hover{
+  transform: scale(1.2,1.2);
+  transition-duration:1s;
+}
+
+footer{
+  background-color:#262626;
+  width:100%;
+  margin-top:50px;
+}
+footer h1{
+color:white;
+padding-top:10px;
+margin:0px;
+}
+#kontakt, #mapa {
+margin-top: 100px;
+}
+form {
+
+color: white;
+}
+form input {
+width: 330px;
+height: 30px;
+}
+textarea {
+width: 330px;
+resize: none;
+/*blokujemy możliwość zmiany wielkości przez użytkownika*/
+}
+form label {
+font-size: 18px;
+}
+fieldset {
+text-align: left;
+padding: 20px;
+margin-bottom: 10px;
+}
+legend {
+font-size: 30px;
+}
+.button {
+width: 150px;
+height: 50px;
+background-color: #fa4a0a;
+color: white;
+padding: 15px 32px;
+font-size: 16px;
+border-radius: 4px;
+transition-duration: 0.4s;
+border: 2px solid #fa4a0a;
+text-transform: uppercase;
+}
+.button:hover {
+background-color: white;
+color: black;
+}
+/*dla małych urządzeń wyświetlamy pozycję w menu pionowo*/
+@media screen and (max-width: 768px) {
+nav {
+flex-direction:column;
+align-items: flex-end
+}
+iframe{
+width:400px;
+
+}
+.button{
+width:100%;
+}
+form input,textarea{
+width:250px;
+}
+.auto-galeria{
+/*sposób na responsywne obrazki */
+width: 100%;
+height: auto;
+max-width:700px;
+border-radius:10px;
+border:3px groove #e6eaeb;
+}
+}
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Formularze</title>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <form action="https://formsubmit.co/jannabialek06@gmail.com" method="POST" enctype="multipart/form-data">
+<label for="nazwa ">Nazwa</label>
+
+<input class="shadow" type="text" maxlength="20" placeholder="Podaj nazwę " id="nazwaUzytkownika" name="nazwa_uzytkownika">
+    
+ <label for="wiek">Wiek</label>
+
+<input class="shadow" type="number" maxlength="2" placeholder="Podaj wiek">
+     
+    
+
+ <label for="haslo">Hasło</label>
+    <input class="shadow" type="password" id="haslo" name="haslo" placeholder="Podaj Hasło">
+
+<label>Ulubiona godzina</label>
+    <input class="shadow" type="time" name="data_urodzenia">
+<label>Kraj:</label>
+<select name="kraj">
+<option value="Polska">Polska</option>
+<option value="Niemcy">Niemcy</option>
+<option value="Anglia">Anglia</option>
+<option value="USA">USA</option>
+</select>
+
+<label>Mam:</label>
+<input style="width:20px;" type="radio" name="zwierze" value="Kot">Kotka
+<input style="width:20px;" type="radio" name="zwierze" value="Pies">Pieska
+<input style="width:20px;" type="radio" name="zwierze" value="Inne">Inne zwierzątko
+<input style="width:20px;" type="radio" name="zwierze" value="Brak">Nie mam zwierzątka
+
+    <label>Prześlij plik graficzny ze swoim awatarem</label>
+<input type="file" name="zalacznik" accept="image/png, image/jpeg">
+
+
+<input id="btnSubmit" type="submit" value="Prześlij">
+
+   
+  </form>
+
+
+
+</body>
+
+</html>

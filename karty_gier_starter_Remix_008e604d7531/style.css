@@ -1,0 +1,78 @@
+/*dodaj czcionkę ze strony google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*dla elementu body zastosuj wybraną czcionkę*/
+body{
+  font-family:"Quicksand", sans-serif;
+}
+
+
+
+/*odwołaj się do klasy kontener*/
+.kontener{
+
+  display:flex;        /*ustawiamy kontener jako flexbox*/
+  flex-wrap: wrap;        /*jeśli elementy nie będą się mieścić w jednym wierszu zostaną przeniesione*/
+  justify-content:space-evenly;        /*wyjustowanie elementów względem kontenera */
+}
+
+
+
+
+
+/*odwołaj się do klasy karta*/
+.karta{
+margin:20px;
+width:300;
+  height:430px;
+  
+  
+        background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  
+  
+  border-radius:15px;
+  text-align:center;
+}
+
+
+
+/*dla paragrafu dodaj wypełnienie na 5 px*/
+p{
+ color:white;
+ padding:5px;
+}
+
+
+
+#gra1,#gra2,#gra3,#gra4{
+
+
+        /*zaokrąglenie rogów karty ustaw-15px 15px 0px 0px*/ 
+        /*ustaw szerokość na 100%*/
+        /*ustaw wysokość na 170px;*/
+        /*ustaw aby zdjęcie na tło obrazkowe odpowiednio się skalowało */
+        /*ustaw margines z dołu na 10px*/
+} 
+
+
+
+/*odwołaj się do powyższych divów i każdemu ustaw konkretny obrazek na tło*/
+#gra1{
+  background-image: url("Minecraft.jpg");
+}
+
+/*sformatuj przycisk według własnego pomysłu*/
+button{
+
+}
+
+
+/*stwórz efekt po najechaniu kursorem myszki na przycisk*/
+button:hover{
+  
+}
+
